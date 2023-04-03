@@ -35,7 +35,5 @@ def get_matches(year):
 
 
 fifa = [get_matches(year) for year in years]
-
 df_fifa = pd.concat(fifa, ignore_index=True)
-
 df_fifa.to_csv('fifa_worldcup_historical_data.csv', index=False)
